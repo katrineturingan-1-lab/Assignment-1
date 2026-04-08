@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "answer": "HyperText Markup Language"
+  },
+  {
+    "id": 2,
+    "question": "What is CSS used for?",
+    "answer": "Styling and layout of web pages"
+  },
+  {
+    "id": 3,
+    "question": "What is JavaScript?",
+    "answer": "A programming language used to make web pages interactive"
+  },
+  {
+    "id": 4,
+    "question": "What is Node.js?",
+    "answer": "A runtime environment that allows JavaScript to run on the server"
+  },
+  {
+    "id": 5,
+    "question": "What does CRUD stand for?",
+    "answer": "Create, Read, Update, Delete"
+  },
+  {
+    "id": 6,
+    "question": "What is an API?",
+    "answer": "Application Programming Interface used for communication between systems"
+  },
+  {
+    "id": 7,
+    "question": "What is Express?",
+    "answer": "A Node.js framework used to build web servers"
+  },
+  {
+    "id": 8,
+    "question": "What is a JSON file?",
+    "answer": "A file format used to store and exchange data"
+  }
+]

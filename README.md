@@ -1,2 +1,1 @@
-# Assignment-1
-A flashcard learning sequence
+Ready-to-submit Flashcard App with preloaded programming questions.

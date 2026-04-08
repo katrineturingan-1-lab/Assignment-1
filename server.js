@@ -1,0 +1,13 @@
+const express=require('express');const fs=require('fs');const app=express();
+app.use(express.json());app.use(express.static('public'));
+const FILE='./data/flashcards.json';
+app.get('/cards',(req,res)=>{res.json(JSON.parse(fs.readFileSync(FILE)));});
+app.post('/cards',(req,res)=>{const d=JSON.parse(fs.readFileSync(FILE));d.push(req.body);
+fs.writeFileSync(FILE,JSON.stringify(d));res.sendStatus(200);});
+app.put('/cards/:id',(req,res)=>{let d=JSON.parse(fs.readFileSync(FILE));
+d=d.map(c=>c.id==req.params.id?req.body:c);fs.writeFileSync(FILE,JSON.stringify(d));
+res.sendStatus(200);});
+app.delete('/cards/:id',(req,res)=>{let d=JSON.parse(fs.readFileSync(FILE));
+d=d.filter(c=>c.id!=req.params.id);fs.writeFileSync(FILE,JSON.stringify(d));
+res.sendStatus(200);});
+app.listen(3000,()=>console.log("Server running on port 3000"));

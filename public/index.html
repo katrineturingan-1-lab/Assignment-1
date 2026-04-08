@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flashcards HD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>📚 Flashcards</h1>
+
+<div class="input-container">
+  <input id="question" placeholder="Enter question">
+  <input id="answer" placeholder="Enter answer">
+  <button onclick="addCard()">Add Card</button>
+</div>
+
+<p id="emptyMsg">No flashcards yet. Add one!</p>
+
+<div id="cards" class="cards"></div>
+
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Edit Card</h2>
+    <input id="editQuestion">
+    <input id="editAnswer">
+    <button onclick="saveEdit()">Save</button>
+    <button onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
